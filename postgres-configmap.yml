@@ -1,0 +1,12 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: postgres-secret
+  namespace: default
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: booksdb
+  POSTGRES_USER: bookappusr
+  POSTGRES_PASSWORD: bookapppwd
+  
